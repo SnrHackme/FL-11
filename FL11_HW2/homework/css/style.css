@@ -3,6 +3,7 @@
 		margin: 0;
 		padding: 0;
 	}
+
 	#contact, .tm-team-img, .tm-main-nav, .img-contact-us, .carousel-indicators, .gallery-container {
 		display: none;
 	}
