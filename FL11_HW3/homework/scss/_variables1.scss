@@ -1,0 +1,15 @@
+$fonts: (
+  "Sans": 'Source Sans Pro',
+  "Hind": 'Hind',
+  "Fresca": 'Fresca'
+);
+$btnColor: #699900;
+$underlineColor: #14a0c7;
+$headingColor: #2c2f3c;
+$mainThemeColor: #fff;
+$accentThemeColor: #21232e;
+$secondaryColor: #c0c3ce;
+$gradient: linear-gradient(45deg, #679708, #2E5CD7);
+$headerBg: url(../img/m-h-day.jpg);
+$mainFont: map-get($fonts,"Sans");
+$secondFont: map-get($fonts,"Hind");

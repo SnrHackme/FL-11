@@ -1,0 +1,15 @@
+$fonts: (
+  "Sans": 'Source Sans Pro',
+  "Hind": 'Hind',
+  "Fresca": 'Fresca'
+);
+$btnColor: #e3ac00;
+$underlineColor: #ff4e33;
+$headingColor: #fff;
+$mainThemeColor: #21232e;
+$accentThemeColor: #3b3f50;
+$secondaryColor: #d1d1d1;
+$gradient: linear-gradient(45deg, #da9d0a, #95314f);
+$headerBg: url(../img/m-h-night.jpg);
+$mainFont: map-get($fonts,"Sans");
+$secondFont: map-get($fonts,"Fresca");
