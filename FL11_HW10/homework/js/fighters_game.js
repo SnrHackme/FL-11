@@ -2,15 +2,27 @@ class Fighter {
     constructor(settings) {
     let wins = 0;
     let loses = 0;
+    let max = 100;
     this.getName = () => settings.name;
     this.getDamage = () => settings.damage;
     this.getHealth = () => settings.hp;
     this.getAgility = () => settings.agility;
+    if(settings.agility > max) {
+        settings.agility = max;
+    } else if(settings.agility < 0) {
+        settings.agility = 0
+    }
     this.logCombatHistory = () => 
     console.log(`Name: ${settings.name}, Wins: ${wins}, Losses: ${loses}`);
     this.addWin = () => wins++;
     this.addLoss = () => loses++;
-    this.heal = (num) => settings.hp + num;
+    this.heal = (num) => {
+        if(settings.hp + num > max) {
+            settings.hp = max;
+        } else {
+            settings.hp + num;
+        }
+    }
     this.dealDamage = (num) => {
             if(settings.hp - num < 0) {
                 settings.hp = 0
@@ -19,7 +31,6 @@ class Fighter {
             }
         }
     this.attack = (obj2) => {
-        let max = 100;
         let random = Math.floor(Math.random() * (max - 0 + 1)) + 0;
         if(random > this.getAgility()) {
             obj2.dealDamage(this.getDamage());
